@@ -61,7 +61,7 @@ Navigate to where you have installed the files.
 ```
 php Calculator.php
 ```
-This return the total in co
+This ouputs the total to the command line.
 
 
 
