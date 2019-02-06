@@ -1,0 +1,7 @@
+add 2.5
+divide 5
+add 
+multiply 3
+stop 6
+subtract 1
+apply 
