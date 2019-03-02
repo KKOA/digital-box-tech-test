@@ -61,7 +61,13 @@ Navigate to where you have installed the files.
 ```
 php Calculator.php
 ```
-This outputs the total to the command line.
 
+By default this output the total for instructions.txt.
+
+ You can specify the file that the program should run against  in the command prompt/ terminal by adding filename as a second argument. E.g.
+```
+php Calculator.php instruction2.txt
+```
+***The file must be located in same directory as Calculator.php**
 
 
