@@ -50,7 +50,7 @@ This application was written on a machine running Mac Operating System and PHP V
 
 ## Folder Structure
 The zip folder contains
-- Calculator.php
+- main.php
 - instructions.txt
 - instructions2.txt
 
@@ -59,15 +59,15 @@ After copying the Tech test folder, open your terminal/command prompt.
 Navigate to where you have installed the files.
 
 ```
-php Calculator.php
+php main.php
 ```
 
 By default this output the total for instructions.txt.
 
  You can specify the file that the program should run against  in the command prompt/ terminal by adding filename as a second argument. E.g.
 ```
-php Calculator.php instruction2.txt
+php main.php instruction2.txt
 ```
-***The file must be located in same directory as Calculator.php**
+***The file must be located in same directory as main.php**
 
 
