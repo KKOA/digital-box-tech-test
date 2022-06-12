@@ -40,13 +40,14 @@ Below are the lists of assumptions for the tech challenge:
 - Ignore “divide” instruction if divisor is 0.
 - If the file is not found or is not readable then display error message.
 - If no number is given on the same line as the “apply” instruction then set initial value to zero.
+- Lines after instruction apply are ignored.
 - No binary operator instruction is executed if there is no corresponding number.
 - Instructions loaded from file can be case insensitive.
 - As no language is specified, I have chosen PHP as the coding language.
 - It is not specified whether the filename needs to be hard coded or entered by the user. The program allows the user to enter file as the second argument. A default file name is set if no argument is passed.
 
 ## Requirements
-This application was written on a machine running Mac Operating System and PHP Version 7.1.7. However the minimum requirement is a machine running PHP version 5.2 or later.
+This application was written on a machine running Windows Operating System and PHP Version 8.1.6. However the minimum requirement is a machine running PHP version 7.4 or later.
 
 ## Folder Structure
 The zip folder contains
@@ -70,4 +71,12 @@ php main.php instruction2.txt
 ```
 ***The file must be located in same directory as main.php**
 
-
+## How to run the tests
+In terminal following in terminal to install PHPUnit
+```
+composer update
+```
+Next, run the following to run tests from the root directory
+```
+./vendor/bin/phpunit --testdox test
+```
