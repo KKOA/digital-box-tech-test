@@ -77,7 +77,8 @@ class FileInstructionReaderTest extends TestCase
 	function multiValidLines(){
 		return [
 			['multi.txt', [8,['add','divide','multiply','subtract'],[2,5,3,1]]],
-			['multi2.txt', [0,['add','divide','multiply','subtract'],[2.5,5,3,1]]]
+			['multi2.txt', [0,['add','divide','multiply','subtract'],[2.5,5,3,1]]],
+			['multi3.txt', [0,['subtract','divide','multiply'],[1,5,2]]]
 		];
 	}
 
@@ -85,7 +86,7 @@ class FileInstructionReaderTest extends TestCase
 	 * @test
 	 * @dataProvider multiValidLines
 	 */
-	public function when_file_provide_contains_mutliple_return_correct_response($file,$expectation):void{
+	public function when_file_provide_contains_multiple_return_correct_response($file,$expectation):void{
 		$sut = new FileInstructionReader("test/inputFiles/$file",false);
 		$result =$sut->getInstructions();
 		$this->assertEquals($expectation,$result);

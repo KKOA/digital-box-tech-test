@@ -97,8 +97,16 @@ class FileInstructionReader
 
 			if(debugMode($this->debug)) print 'line : '.$line."\n";
 
-			if(count(explode(" ", $line)) < 2)
-				continue;
+
+			if(count(explode(" ", $line)) < 2){
+				list($instruction) = explode(" ", $line);
+
+				//If no number is given on the same line as the “apply” instruction then set initial value to zero
+				if($instruction !== 'apply'){
+					continue;
+				}
+				$line ="$instruction 0";
+			}
 
 			list($instruction, $number) = explode(" ", $line);
 

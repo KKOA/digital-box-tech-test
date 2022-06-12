@@ -1,0 +1,8 @@
+add hope
+subtract 1
+add
+divide 5
+multiply 2
+stop 6
+apply
+multiply 10
