@@ -1,0 +1,5 @@
+add 2
+divide 5
+multiply 3
+subtract 1
+apply 8
